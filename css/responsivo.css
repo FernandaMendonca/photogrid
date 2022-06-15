@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  .profile,
+  .galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .profile {
+    height: 20rem;
+    padding: 5px;
+  }
+  .info {
+    text-align: center;
+  }
+  .galeria {
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .galeria li {
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+  .profile,
+  .galeria {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .galeria li {
+    margin: 0 0 2rem 0;
+  }
+}
